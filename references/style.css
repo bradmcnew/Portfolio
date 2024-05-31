@@ -1,8 +1,16 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Source Code';
+    src: url(./fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf);
+}
+
 html, body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     background-color: rgb(17, 23, 41);
 }
 
@@ -14,10 +22,11 @@ html, body {
     width: 50%;
     padding-left: 15%;
     padding-top: 5rem;
+    font-family: 'Source Code', monospace;
 }
 
 nav {
-    color: white;
+    color: rgb(230 ,233 ,241);
 }
 
 nav ul {
@@ -34,6 +43,7 @@ nav li a{
     font-size: 1.2em;
     text-decoration: none;
     color: rgb(155, 165, 185);
+    text-transform: uppercase;
 }
 .nav-list li {
     position: relative;
@@ -55,15 +65,36 @@ nav li::before {
 .dull {
     color: rgb(155, 165, 185);
 }
+.bright {
+    color: rgb(230 ,233 ,241);
+}
 
 .right {
     overflow-y: auto;
     width: 50%;
     height: 100vh;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(155, 165, 185);
+    margin-top: 6em;
+    padding-right: 5%;
+}
+
+.right h1 {
     font-size: 3em;
+    margin-top: 5rem;
 }
 
 body {
     display: flex;
     align-items: flex-start;
+}
+
+.social img{
+    width: 3rem;
+    margin-right: 0.3rem;
+}
+.social {
+    margin-left: 0;
+    margin-top: 2rem;
 }
