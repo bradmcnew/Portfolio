@@ -23,7 +23,7 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 5rem;
 }
 
 nav h1 {
@@ -33,7 +33,37 @@ nav h1 {
 nav li a{
     font-size: 1.2em;
     text-decoration: none;
-    color: rgb(150, 160, 180);
+    color: rgb(155, 165, 185);
+}
+.nav-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
 }
 
+nav li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 1rem; /* Length of the line */
+    height: 0.1rem; /* Thickness of the line */
+    background-color: rgb(155, 165, 185); /* Color of the line */
+    transform: translateY(-50%);
+}
 
+.dull {
+    color: rgb(155, 165, 185);
+}
+
+.right {
+    overflow-y: auto;
+    width: 50%;
+    height: 100vh;
+    font-size: 3em;
+}
+
+body {
+    display: flex;
+    align-items: flex-start;
+}
