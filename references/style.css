@@ -109,3 +109,27 @@ body {
     padding: 1rem;
     margin-top: 2rem;
 }
+.project h2 {
+    font-size: 2rem;
+    font-family: 'Source Code', monospace;
+    color: white;
+}
+.project img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    height: auto;
+}
+.project ul {
+    list-style-type: none;
+    margin-top: 1.5rem;
+    display: flex;
+    padding-left: 0;
+}
+.project li {
+    margin-right: 0.5rem;
+    border-radius: 2rem;
+    padding: 0.2rem 0.9rem;
+    background-color: rgba(48, 213, 200, 0.2);
+    color: #00ffe5;
+}

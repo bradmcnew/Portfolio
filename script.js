@@ -29,7 +29,7 @@ for (let i of navItems) {
 
 //project class
 class Project {
-    constructor(title, description, image, link, languages) {
+    constructor(title, description, image, link, languages = []) {
         this._title = title;
         this._description = description;
         this._image = image;
@@ -51,13 +51,22 @@ class Project {
     get languages() {
         return this._languages;
     }
+    listLanguages() {
+        let htmlString = '';
+        for (let lang of this._languages) {
+            htmlString += `<li>${lang}</li>\n`;
+        }
+        return htmlString;
+    }
     render() {
         return (`
             <div class="project" id="${this._title}">
                 <h2>${this._title}</h2>
                 <img src="${this._image}" alt="${this._title} image">
                 <p>${this._description}</p>
-                <p class="languages">${this._languages}</p>
+                <ul>
+                  ${this.listLanguages()}
+                </ul>
                 <a class="proj-link" href="${this._link}" target="_blank">View Project</a>
             </div>
         `)
@@ -67,9 +76,9 @@ class Project {
 let project1 = new Project(
     'Project 1', //title
     'This is a project description', //description
-    'images/project1.jpg', //image
+    'https://m.media-amazon.com/images/M/MV5BMjRkN2VjODYtZTA0NS00NGUzLWE0ZTItMThkODdlMGUzMjc1XkEyXkFqcGdeQXVyODk3MDg0ODQ@._V1_.jpg', //image
     'https://github.com', //link
-    'HTML, CSS, JavaScript'//languages
+    ['HTML', 'CSS', 'JavaScript']//array of languages
 );
 //add to html
 document.getElementById('projects').innerHTML = project1.render();
