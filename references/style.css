@@ -116,8 +116,7 @@ body {
 }
 .project img {
     width: 100%;
-    border-radius: 0.5rem;
-    margin-top: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
     height: auto;
 }
 .project ul {
@@ -132,4 +131,17 @@ body {
     padding: 0.2rem 0.9rem;
     background-color: rgba(48, 213, 200, 0.2);
     color: #00ffe5;
+}
+.project figure {
+    border: 1px solid rgb(155, 165, 185);
+    border-radius: 0.6rem;
+}
+.project figcaption {
+    font-size: 1rem;
+    border-top-width: 0;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+.project figcaption a {
+    color: rgb(155, 165, 185);
 }

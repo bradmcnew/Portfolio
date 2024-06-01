@@ -62,12 +62,14 @@ class Project {
         return (`
             <div class="project" id="${this._title}">
                 <h2>${this._title}</h2>
-                <img src="${this._image}" alt="${this._title} image">
+                <figure>
+                  <a href="${this._link}" target="_blank" title="open project in GitHub"><img src="${this._image}" alt="${this._title} image"></a>
+                  <figcaption><a href="${this._link}" target="_blank">${this._link}</a></figcaption>
+                </figure>
                 <p>${this._description}</p>
                 <ul>
                   ${this.listLanguages()}
                 </ul>
-                <a class="proj-link" href="${this._link}" target="_blank">View Project</a>
             </div>
         `)
     }
