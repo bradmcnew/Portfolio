@@ -64,7 +64,7 @@ class Project {
                 <h2>${this._title}</h2>
                 <figure>
                   <a href="${this._link}" target="_blank" title="open project in GitHub"><img src="${this._image}" alt="${this._title} image"></a>
-                  <figcaption><a href="${this._link}" target="_blank">${this._link}</a></figcaption>
+                  <figcaption><a href="${this._link}" target="_blank">${this._link}</figcaption><img src="./references/images/icons/new_tab.png" alt="new tab icon" class="new_tab"></a>
                 </figure>
                 <p>${this._description}</p>
                 <ul>
