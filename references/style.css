@@ -118,6 +118,7 @@ body {
     width: 100%;
     border-radius: 0.5rem 0.5rem 0 0;
     height: auto;
+    border-bottom: 0.1rem solid rgb(155, 165, 185);
 }
 .project ul {
     list-style-type: none;
@@ -133,7 +134,7 @@ body {
     color: #00ffe5;
 }
 .project figure {
-    border: 1px solid rgb(155, 165, 185);
+    border: 0.1rem solid rgb(155, 165, 185);
     border-radius: 0.6rem;
 }
 .project figcaption {

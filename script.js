@@ -63,7 +63,7 @@ class Project {
             <div class="project" id="${this._title}">
                 <h2>${this._title}</h2>
                 <figure>
-                  <a href="${this._link}" target="_blank" title="open project in GitHub"><img src="${this._image}" alt="${this._title} image"></a>
+                  <a href="${this._link}" target="_blank" title="open in GitHub"><img src="${this._image}" alt="${this._title} image"></a>
                   <figcaption><a href="${this._link}" target="_blank">${this._link}</a></figcaption>
                 </figure>
                 <p>${this._description}</p>
@@ -75,12 +75,24 @@ class Project {
     }
 }
 //project instances
-let project1 = new Project(
-    'Project 1', //title
-    'This is a project description', //description
-    'https://m.media-amazon.com/images/M/MV5BMjRkN2VjODYtZTA0NS00NGUzLWE0ZTItMThkODdlMGUzMjc1XkEyXkFqcGdeQXVyODk3MDg0ODQ@._V1_.jpg', //image
-    'https://github.com', //link
-    ['HTML', 'CSS', 'JavaScript']//array of languages
-);
+const projects = [
+    new Project(
+        'Project 1', //title
+        'This is a project description', //description
+        'https://m.media-amazon.com/images/M/MV5BMjRkN2VjODYtZTA0NS00NGUzLWE0ZTItMThkODdlMGUzMjc1XkEyXkFqcGdeQXVyODk3MDg0ODQ@._V1_.jpg', //image
+        'https://github.com', //link
+        ['HTML', 'CSS', 'JavaScript']//array of languages
+    ),
+    new Project(
+        'Project 2',
+        'This is a project description',
+        'https://enwpgo.files.wordpress.com/2023/07/image-107.jpeg',
+        'https://github.com',
+        ['HTML', 'CSS', 'JavaScript', 'Markdown', 'git']
+    ),
+]
 //add to html
-document.getElementById('projects').innerHTML = project1.render();
+const projContainer = document.getElementById('projects');
+projects.forEach(project => {
+    projContainer.innerHTML += project.render();
+});
