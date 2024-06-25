@@ -104,8 +104,8 @@ body {
 }
 
 .project {
-    border: 1px solid rgb(155, 165, 185);
-    border-radius: 0.5rem;
+    border-top: 1px solid rgb(155, 165, 185);
+    /*border-radius: 0.5rem;*/
     padding: 1rem;
     margin-top: 2rem;
 }
@@ -119,6 +119,12 @@ body {
     border-radius: 0.5rem 0.5rem 0 0;
     height: auto;
     border-bottom: 0.1rem solid rgb(155, 165, 185);
+}
+.project img:hover {
+    opacity: 0.8;
+}
+.project img:hover + figure {
+    border: 0.1rem solid #00ffe5;
 }
 .project ul {
     list-style-type: none;
