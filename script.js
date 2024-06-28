@@ -78,11 +78,11 @@ document.addEventListener('DOMContentLoaded', function() {
     //project instances
     const projects = [
         new Project(
-            'Project 1', //title
+            'Spotify Playlist Creator', //title
             'This is a project description', //description
-            'https://m.media-amazon.com/images/M/MV5BMjRkN2VjODYtZTA0NS00NGUzLWE0ZTItMThkODdlMGUzMjc1XkEyXkFqcGdeQXVyODk3MDg0ODQ@._V1_.jpg', //image
-            'https://github.com', //link
-            ['HTML', 'CSS', 'JavaScript']//array of languages
+            './references/images/projects/jammers-project-image.png', //image
+            'https://github.com/bradmcnew/playlist-creator.git', //link
+            ['React','HTML', 'CSS', 'JavaScript']//array of languages
         ),
         new Project(
             'Project 2',
